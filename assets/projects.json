@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Nativetype",
+        "url": "https://nativetype.com",
+        "description": "Help people learn native languages through typing.",
+        "status": "Actively Building"
+    },
+    {
+        "title": "Y3Ds",
+        "url": "https://www.youtube.com/@Y3DS",
+        "description": "Sharing my learnings, workflows, BTS and more about blender and 3d stuffs.",
+        "status": "OnNOff"
+    },
+    {
+        "title": "Unspecialist",
+        "url": "https://www.youtube.com/@imunspecialist",
+        "description": "A Log for strategic generalists. Sharing the journey.",
+        "status": "Actively Logging"
+    },
+    {
+        "title": "Biyo Studios",
+        "url": "#",
+        "description": "Hyper Casual mobile games based on virality.",
+        "status": "Discontinued"
+    }
+]
