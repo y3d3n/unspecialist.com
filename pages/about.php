@@ -68,7 +68,7 @@ require_once 'includes/header.php';
             </ul>
         </div>
         <div>
-            <a href="/manifesto">Read the Manifesto →</a>
+            <a href="/manifesto">Read the Manifesto →</a> or <a href="/tech">See What Tech and Tools I use →</a>
         </div>
     </section>
 </main>

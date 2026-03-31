@@ -1,11 +1,6 @@
 <?php
 require_once 'config.php'; 
-
-$routes = [
-    '' => 'home.php',
-    'about' => 'about.php',
-    'manifesto' => 'manifesto.php',
-];
+require_once 'routes.php';
 
 $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 
