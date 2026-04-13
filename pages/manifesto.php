@@ -10,7 +10,8 @@ require_once 'includes/header.php';
     </section>
     <section class="container-sm manifesto">
         <div>
-            <p>The world tells you to pick one thing. <br>
+            <p>The world doesn’t actually care what you become.
+                It cares whether you are easy to use.<br>
                 One career. <br>
                 One skill. <br>
                 One identity.
@@ -19,56 +20,62 @@ require_once 'includes/header.php';
                 Specialize. Stay focused. Don’t drift.
             </p>
             <p>
-                That advice works for many people. <br>
-                But some of us are wired differently.
+                That advice builds great careers.<br>
+                But some of us refuse that.
             </p>
             <p>
-                We’re curious about many fields. <br>
-                We like learning how things work. <br>
-                We enjoy connecting ideas from different worlds.
+                We get curious. <br>
+                We find the connections others miss. <br>
+                We can't stop connecting dots.
             </p>
             <p>
-                <strong>That’s where the idea of the Unspecialist comes from.</strong>
+                We follow curiosity past the point where it makes sense. <br>
+                We go deep, then leave, then return with something new.
+                <br>
+                Not scattered. <br>
+                Layered.
             </p>
         </div>
-        <div>
-            <h2>Why This Matters?</h2>
+        <div class="mt">
+            <h2>And that changes everything.</h2>
             <p>Real problems rarely belong to a single field.</p>
-            <p>Technology touches art. <br>
-                Art shapes ideas. <br>
-                Ideas turn into systems. <br>
-                Systems become products. <br>
-                Products need to communicate.
+            <p style="padding-left:20px;">
+                <em>
+                    Technology touches art. <br>
+                    Art shapes ideas. <br>
+                    Ideas turn into systems. <br>
+                    Systems become products. <br>
+                    Products need to communicate.
+                </em>
             </p>
             <p>
-                When you can move between disciplines, you can ask better questions to solve better problems.
+                When you can move between disciplines, you can ask better questions to solve greater problems.
             </p>
-
+            <p>
+                A generalist knows a little about many things. <br>
+                An Unspecialist has gone deep in more than one.
+            </p>
             <p>
                 That becomes an advantage. <br>
                 Not because you know everything. <br>
                 But because you can combine what you know.
             </p>
+            <p style="padding-left:20px;">
+                You become non-fungible. <br>
+                Not a role. Not a title.
+            </p>
         </div>
-        <div>
-            <h2>What This Site Is About?</h2>
-            <p>This site exists to document that process.</p>
-            <p>You’ll find things like:</p>
-            <ul>
-                <li>ideas worth exploring</li>
-                <li>experiments and projects</li>
-                <li>lessons from building across fields</li>
-                <li>observations about learning and creating</li>
-            </ul>
+        <div class="mt cbox">
+            <h2>What this isn't.</h2>
             <p>
-                No guru advice. <br> 
-                No get-rich-quick thinking. <br> 
+                No guru advice. <br>
+                No get-rich-quick thinking. <br>
                 No pretending to have everything figured out. <br>
                 Just honest work and curiosity.
             </p>
 
         </div>
-        <section>
+        <section class="mt">
             <a href="/about">Meet the person behind this →</a>
         </section>
     </section>

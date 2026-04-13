@@ -1,13 +1,17 @@
 <?php
-$title = "About | the Unspecialist.com";
+$title = "About | Unspecialist.com";
 $description = "A Builder exploring art, technology, and long-term thinking. Writing about learning in public, internet leverage, and creative systems.";
 $og_description = "Meeth the Unspecialist - building across disciplines, documenting experiments, and designing long-term creative leverage.";
 require_once 'includes/header.php';
 ?>
 <main class="container about">
-    <h1 class="md-title title-underlined">About</h1>
+    <h1 class="md-title">
+        Not a specialist. <br>
+Not a generalist. <br>
+I'm Yeden Sherpa.
+    </h1>
     <div class="mt">
-        <p>Hi, I’m <strong>Yeden</strong>, I’ve always had a hard time answering <strong>“What do
+        <p>I’ve always had a hard time answering <strong>“What do
                 you do?”</strong> I had no clear & simple title. </p>
         <p>
             I explore art, code, systems, and ideas. So depending on when you asked me:</p>
@@ -18,7 +22,7 @@ require_once 'includes/header.php';
             </li>
             <li>
                 <strong>Artist:</strong>
-                Art has always been my way of <a target="_blank" href="https://kathmandupost.com/miscellaneous/2018/09/29/passing-on-the-baton#:~:text=The%20other%20theme,value%20at%20all.">experssing thoughts and ideas</a>  in various medium depending upon the complexity of the thought process.
+                Art has always been my way of <a target="_blank" href="https://kathmandupost.com/miscellaneous/2018/09/29/passing-on-the-baton#:~:text=The%20other%20theme,value%20at%20all." aria-label="How writer felt void and existential cricis watching Yeden's art work">experssing thoughts and ideas</a>  in various medium depending upon the complexity of the thought process.
             </li>
             <li>
                 <strong>3D Generalist:</strong>
@@ -31,13 +35,12 @@ require_once 'includes/header.php';
             <li>
                 <strong>Teacher:</strong>
                 Once I hated teachers because I couldn't learn their way.
-               I became best teacher for myself and now I share with others too.
+               So I became best teacher for myself and now I share with others too.
             </li>
         </ul>
         <p class="mt pitch">
             <strong>
-                I’m on a mission to show multi-passionate creators turn scattered curiosity into functional systems with
-                confidence instead of second-guessing.
+                Unspecialist exists because doing more than one thing seriously is still treated as a problem to fix. It isn't.
             </strong>
         </p>
     </div>
@@ -45,30 +48,30 @@ require_once 'includes/header.php';
         <div>
             <h3>Things I like</h3>
             <ul>
-                <li><a target="_blank" href="https://yeden.com.np" class="link">Creative Control</a></li>
-                <li><a target="_blank" href="https://newsletter.unspecialist.com" class="link">Deep Thinking</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@hubermanlab" class="link">Andrew Huberman</a> </li>
-                <li><a target="_blank" href="https://chess.com" class="link">Chess</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@y3ds/" class="link">Teaching</a></li>
-                <li><a target="_blank" href="https://www.imdb.com/name/nm0634240/?ref_=ext_shr_lnk" class="link">Christopher Nolan</a> </li>
-                <li><a target="_blank" href="https://www.youtube.com/@AndreaBocelli/" class="link">Andrea Bocelli</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@StarTalk/" class="link">StarTalk</a></li>
+                <li><a target="_blank" href="https://yeden.com.np" class="link" aria-label="Artworks by Yeden Sherpa">Creative Control</a></li>
+                <li><a target="_blank" href="https://newsletter.unspecialist.com" class="link" aria-label="Newsletter by Yeden Sherpa">Deep Thinking</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@hubermanlab" class="link" aria-label="Youtube of Andrew Huberman">Andrew Huberman</a> </li>
+                <li><a target="_blank" href="https://chess.com" class="link" aria-label="chess.com">Chess</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@y3ds/" class="link" aria-label="Yeden teaching Blender">Teaching</a></li>
+                <li><a target="_blank" href="https://www.imdb.com/name/nm0634240/?ref_=ext_shr_lnk" class="link" aria-label="IMDB Christopher Nolan">Christopher Nolan</a> </li>
+                <li><a target="_blank" href="https://www.youtube.com/@AndreaBocelli/" class="link" aria-label="Classic Singer Andrea Bocelli">Andrea Bocelli</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@StarTalk/" class="link" aria-label="Podcast by Neil deGrasse Tyson">StarTalk</a></li>
             </ul>
         </div>
         <div>
             <h3>Big NO NO!</h3>
             <ul>
-                <li><a href="#" onclick="event.preventDefault();" class="dis-link">Dogma</a> </li>
-                <li><a href="#" onclick="event.preventDefault();" class="dis-link">Hypes</a></li>
-                <li><a href="#" onclick="event.preventDefault();" class="dis-link">Clickbait</a></li>
-                <li><a href="#" onclick="event.preventDefault();" class="dis-link">Superficial Advice</a></li>
-                <li><a href="#" onclick="event.preventDefault();" class="dis-link">Status Games</a></li>
-                <li><a href="#" onclick="event.preventDefault();" class="dis-link">Just Talking</a></li>
-                <li><a href="#" onclick="event.preventDefault();" class="dis-link">Noise</a></li>
+                <li><a href="#" onclick="event.preventDefault();" class="dis-link" aria-label="Don't preach me about your religious and political beliefs">Dogma</a> </li>
+                <li><a href="#" onclick="event.preventDefault();" class="dis-link" aria-label="I don't chase virality and hupes">Hypes</a></li>
+                <li><a href="#" onclick="event.preventDefault();" class="dis-link" aria-label="The only thing I in this world is clickbaits">Clickbait</a></li>
+                <li><a href="#" onclick="event.preventDefault();" class="dis-link" aria-label="I don't give and take superficial advice">Superficial Advice</a></li>
+                <li><a href="#" onclick="event.preventDefault();" class="dis-link" aria-label="I live for living">Status Games</a></li>
+                <li><a href="#" onclick="event.preventDefault();" class="dis-link" aria-label="Yes, I don't want just talking">Just Talking</a></li>
+                <li><a href="#" onclick="event.preventDefault();" class="dis-link" aria-label="I love to stay in quiet places">Noise</a></li>
             </ul>
         </div>
-        <div>
-            <a href="/manifesto">Read the Manifesto →</a> or <a href="/tech">See What Tech and Tools I use →</a>
+        <div style="line-height:160%;">
+            <a href="/manifesto" aria-label="Read the Unspecialist manifesto">Read the Manifesto →</a> <br> or <br> <a href="/tech">See What Tech and Tools I use →</a>
         </div>
     </section>
 </main>

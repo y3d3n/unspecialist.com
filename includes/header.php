@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <?php
 $site = "Unspecialist";
 $brief = "A home for curious minds building across art, code, design, and ideas.";
@@ -42,16 +42,16 @@ $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 <body>
     <header class="container flex nav">
-        <a href="/" class="un-logo">
+        <a href="/" class="un-logo" aria-label="Go to Home page">
             <h3>Unspecialist</h3>
             <span>The World Wants You Small. Don’t Listen.</span>
         </a>
         <button class="hamburger" id="hamburger">☰</button>
         <nav class="nav-links" id="navLinks">
-            <a href="/about" class="<?= $currentPath === '/about' ? 'active' : '' ?>">About</a>
-            <a href="/manifesto" class="<?= $currentPath === '/manifesto' ? 'active' : '' ?>">Manifesto</a>
-            <a href="https://newsletter.unspecialist.com" target="_blank">Newsletter</a>
-            <a href="https://www.youtube.com/@imunspecialist" target="_blank">YouTube</a>
+            <a href="/about" class="<?= $currentPath === '/about' ? 'active' : '' ?>" aria-label="About Unspecialist">About</a>
+            <a href="/manifesto" class="<?= $currentPath === '/manifesto' ? 'active' : '' ?>" aria-label="Read the Unspecialist Manifesto">Manifesto</a>
+            <a href="https://newsletter.unspecialist.com" target="_blank" aria-label="Read blogs on Unspecialist">Newsletter</a>
+            <a href="https://www.youtube.com/@imunspecialist" target="_blank" aria-label="Youtube channel of Unspecialist">YouTube</a>
         </nav>
     </header>
     <script>

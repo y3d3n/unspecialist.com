@@ -22,14 +22,15 @@ require_once 'includes/header.php';
                     class="underlined">Unspecialist</strong></span>.
         </p>
         <div class="form-wrap">
-            <form id="newsletter-form">
+            <form class="newsletter-form">
+                <img class="nt-icon" src="/assets/compass.png" alt="north star icon">
                 <input type="text" name="company" style="display:none">
                 <input type="email" name="email" placeholder="Enter your email" required />
                 <button type="submit">Join the Journey</button>
-                <img src="/assets/arrow.png" alt="arrow pointing arrow">
+                <img class="arrow" src="/assets/arrow.png" alt="arrow pointing arrow">
             </form>
             <div class="caption">
-                For occasional insights, projects and ideas worth thinking about.
+                Not a build log. An depth dispatch.
             </div>
             <p id="form-message" class="form-message" style="display:none;">
                 <span class="icon"></span>
@@ -40,7 +41,7 @@ require_once 'includes/header.php';
     <section class="info center-txt">
         <h2>Not a Bluff; Just doing me!</h2>
         <p>
-            I create → I fail → I iterate → I share.
+            Unspecialist is a world, the body of work I build.
         </p>
     </section>
     <section id="projects" class="mt">
@@ -55,7 +56,7 @@ require_once 'includes/header.php';
                         </h3>
                         <span> <?= htmlspecialchars($item['status']) ?> </span>
                     </div>
-                    <p>
+                    <p class="mt-xs">
                         <?= htmlspecialchars($item['description']) ?>
                     </p>
                 </li>
@@ -73,8 +74,8 @@ require_once 'includes/header.php';
                 <strong>You might feel at home here if:</strong>
                 <ul class="checkmark list">
                     <li>You’re curious about many fields</li>
-                    <li>You enjoy both creativity and technology</li>
-                    <li>You build ideas instead of just consuming them</li>
+                    <li>You believe depth in many fields beats mastery in one</li>
+                    <li>You're searching for the idea that connects everything</li>
                     <li>You think independently</li>
                 </ul>
             </div>
@@ -99,29 +100,28 @@ require_once 'includes/header.php';
     <section>
         <div class="flex intro mb-max mb-flex">
             <div class="left-box">
-                <div class="img-wrap">
-                    <img src="/assets/profile-yeden.jpeg" alt="profile of Yeden">
-                </div>
+                <h2 class="topic">Not a specialist. <br>
+                    Not a generalist. <br>
+                    I'm Yeden Sherpa.
+                </h2>
+                <p class="mt lh-160">
+                    Fine art graduate from Kathmandu.
+                    I code, make art, design, teach, and experiment — not because I planned it that way, but because I couldn't stop.
+
+                </p>
+                <p class="mt-s">
+                    I started Unspecialist because I kept being told to pick one thing, and I kept refusing.
+                </p>
             </div>
             <div class="right-box txt-content">
-                <p>I’m Yeden, I’m curious about how humans learn, build, and adapt.</p>
-                <p>I code, make art, design, teach, and experiment.</p>
-                <p>Not because I'm a specialist.</p>
-                <p>Because I'm not.</p>
-                <div class="mt-s">
-                    <p>I operate on 3 non-negotiable principles:</p>
-                    <ul>
-                        <li><strong>Learn in Public:</strong> Sharing the process exposes weak thinking, improves ideas
-                            and attracts the right people.</li>
-                        <li><strong>Play the Long Game:</strong> Getting genuinely good at multiple disciplines takes
-                            years of learning and building.</li>
-                        <li><strong>Master the Essentials, Then Combine:</strong> Real leverage doesn’t come from
-                            knowing everything.</li>
-                    </ul>
+                <div class="img-wrap">
+                    <img src="/assets/profile-yeden.jpeg" alt="Profile of Yeden Sherpa"
+                        aria-label="Profile of Yeden Sherpa">
                 </div>
             </div>
         </div>
     </section>
+
 </main>
 <script>
     fetch("/api/rss")
@@ -156,44 +156,45 @@ require_once 'includes/header.php';
     d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20m3.5 13.5l-1 1L12 13.5l-2.5 2.5l-1-1L11 12L8.5 9.5l1-1L12 10.5l2.5-2.5l1 1L13 12z"/>
 </svg>`;
 
-    document.getElementById("newsletter-form").addEventListener("submit", async function (e) {
-        e.preventDefault();
+    document.querySelectorAll(".newsletter-form").forEach(function (form) {
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
 
-        const email = this.email.value;
-        const message = document.getElementById("form-message");
-        const icon = message.querySelector(".icon");
-        const text = message.querySelector(".text");
+            const email = this.email.value;
+            const message = this.querySelector(".form-message");
+            const icon = message.querySelector(".icon");
+            const text = message.querySelector(".text");
 
-        try {
-            const res = await fetch("/api/subscribe", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: "email=" + encodeURIComponent(email)
-            });
+            try {
+                const res = await fetch("/api/subscribe", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: "email=" + encodeURIComponent(email)
+                });
 
-            if (res.ok) {
-                icon.innerHTML = successIcon;
-                text.textContent = "You're subscribed.";
-                message.classList.remove("error");
-                message.classList.add("success");
+                if (res.ok) {
+                    icon.innerHTML = successIcon;
+                    text.textContent = "You're subscribed.";
+                    message.classList.remove("error");
+                    message.classList.add("success");
+                    message.style.display = "flex";
+                    this.reset();
+                } else {
+                    throw new Error();
+                }
+
+            } catch (err) {
+                icon.innerHTML = errorIcon;
+                text.textContent = "Something went wrong.";
+                message.classList.remove("success");
+                message.classList.add("error");
                 message.style.display = "flex";
-                this.reset();
-            } else {
-                throw new Error();
+            } finally {
+                setTimeout(() => {
+                    message.style.display = "none";
+                }, 2000);
             }
-
-        } catch (err) {
-            icon.innerHTML = errorIcon;
-            text.textContent = "Something went wrong.";
-            message.classList.remove("success");
-            message.classList.add("error");
-            message.style.display = "flex";
-        }finally {
-            setTimeout(()=>{
-                message.style.display = "none";
-
-            }, 2000);
-        }
+        });
     });
 </script>
 <?php require_once 'includes/footer.php'; ?>

@@ -2,7 +2,7 @@
     {
         "title": "Nativetype",
         "url": "https://nativetype.com",
-        "description": "Help people learn native languages through typing.",
+        "description": "A tool built on the belief that language is identity. Helping people reconnect with their native tongue through the act of typing.",
         "status": "Actively Building"
     },
     {
@@ -14,13 +14,13 @@
     {
         "title": "Unspecialist",
         "url": "https://www.youtube.com/@imunspecialist",
-        "description": "A Log for strategic generalists. Sharing the journey.",
+        "description": "The platform for creators who work across multiple fields",
         "status": "Actively Logging"
     },
     {
         "title": "Biyo Studios",
         "url": "#",
-        "description": "Hyper Casual mobile games based on virality.",
+        "description": "Game Studio for building hyper Casual mobile games based on virality.",
         "status": "Discontinued"
     }
 ]
