@@ -1,6 +1,6 @@
 <?php
-$title = "Unspecialist — Thinking in the Internet/AI Age";
-$description = "Exploring interdisciplinary thinking, creative independence, and building in public across art, code, design and ideas.";
+$title = "Unspecialist — The World Wants You Small. Don't Listen.";
+$description = "Unspecialist is a platform for multi-passionate creators who go deep in more than one field. Essays, tools, and honest work by Yeden Sherpa — artist, developer, 3D generalist, teacher.";
 
 $og_description = "For builders who refuse to be one thing. Learn in public. Connect disciplines. Build deliberately.";
 
@@ -8,6 +8,32 @@ $jsondata = file_get_contents(__DIR__ . '/../assets/projects.json');
 
 // Convert JSON → PHP array
 $projects = json_decode($jsondata, true);
+
+
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "Person",
+    "name" => "Yeden Sherpa",
+    "url" => "https://unspecialist.com",
+    "sameAs" => [
+        "https://www.youtube.com/@imunspecialist",
+        "https://www.youtube.com/@Y3DS",
+        "https://x.com/yedensherpa",
+        "https://www.linkedin.com/in/yedensherpa"
+    ],
+    "jobTitle" => "Creator, Developer, Artist",
+    "description" => "ulti-disciplinary creator from Kathmandu. Artist, developer, 3D generalist, teacher, and founder of Unspecialist.",
+    "knowsAbout" => [
+        "Web App Development",
+        "3D Design",
+        "Blender",
+        "Creative Direction",
+        "Product Building",
+        "Fine Arts",
+        "Teaching"
+    ]
+];
+
 require_once 'includes/header.php';
 ?>
 <main class="container home">
@@ -26,11 +52,11 @@ require_once 'includes/header.php';
                 <img class="nt-icon" src="/assets/compass.png" alt="north star icon">
                 <input type="text" name="company" style="display:none">
                 <input type="email" name="email" placeholder="Enter your email" required />
-                <button type="submit">Join the Journey</button>
+                <button type="submit">Think With Me</button>
                 <img class="arrow" src="/assets/arrow.png" alt="arrow pointing arrow">
             </form>
             <div class="caption">
-                Not a build log. An depth dispatch.
+                Not a build log. A depth dispatch.
             </div>
             <p id="form-message" class="form-message" style="display:none;">
                 <span class="icon"></span>
@@ -89,6 +115,9 @@ require_once 'includes/header.php';
                 </ul>
             </div>
         </div>
+        <div class="center-txt mt">
+            If you're still reading, you already know which side you're on.
+        </div>
     </section>
     <section class="feed">
         <h2 class="topic center-txt">Latest from the newsletter</h2>
@@ -142,59 +171,5 @@ require_once 'includes/header.php';
             });
         });
 </script>
-<script>
-    const successIcon = `
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-  <path fill="#5be1a3" fill-rule="evenodd"
-    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
-    clip-rule="evenodd"/>
-</svg>`;
-
-    const errorIcon = `
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-  <path fill="#ff4d4f"
-    d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20m3.5 13.5l-1 1L12 13.5l-2.5 2.5l-1-1L11 12L8.5 9.5l1-1L12 10.5l2.5-2.5l1 1L13 12z"/>
-</svg>`;
-
-    document.querySelectorAll(".newsletter-form").forEach(function (form) {
-        form.addEventListener("submit", async function (e) {
-            e.preventDefault();
-
-            const email = this.email.value;
-            const message = this.querySelector(".form-message");
-            const icon = message.querySelector(".icon");
-            const text = message.querySelector(".text");
-
-            try {
-                const res = await fetch("/api/subscribe", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: "email=" + encodeURIComponent(email)
-                });
-
-                if (res.ok) {
-                    icon.innerHTML = successIcon;
-                    text.textContent = "You're subscribed.";
-                    message.classList.remove("error");
-                    message.classList.add("success");
-                    message.style.display = "flex";
-                    this.reset();
-                } else {
-                    throw new Error();
-                }
-
-            } catch (err) {
-                icon.innerHTML = errorIcon;
-                text.textContent = "Something went wrong.";
-                message.classList.remove("success");
-                message.classList.add("error");
-                message.style.display = "flex";
-            } finally {
-                setTimeout(() => {
-                    message.style.display = "none";
-                }, 2000);
-            }
-        });
-    });
-</script>
+<?php include __DIR__ . '/../includes/ctascript.php'; ?>
 <?php require_once 'includes/footer.php'; ?>

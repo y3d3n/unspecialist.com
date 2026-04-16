@@ -3,18 +3,23 @@
 <?php
 $site = "Unspecialist";
 $brief = "A home for curious minds building across art, code, design, and ideas.";
+$words = "unspecialist, multipotentialite, multi-passionate creator, interdisciplinary thinking, Yeden Sherpa, depth over breadth, creator economy, building in public";
 $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 ?>
 
 <head>
     <title><?= $title ?? $site ?></title>
     <meta name="description" content="<?= $description ?? $brief ?>">
+    <meta name="keywords" content="<?= $keywords ?? $words ?>" />
+    <meta name="author" content="Yeden Sherpa" />
+    <meta name="robots" content="index, follow" />
 
     <meta property="og:title" content="<?= $title ?? $site ?>">
     <meta property="og:description" content="<?= $og_description ?? $brief ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://unspecialist.com">
-    <meta property="og:image" content="https://unspecialist.com/og-image.jpg">
+    <meta property="og:image" content="<?= $og_image ?? 'https://unspecialist.com/assets/og-image.webp' ?>">
+    <meta property="og:site_name" content="Unspecialist" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= $title ?? $site ?>">
@@ -36,8 +41,13 @@ $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'G-WNKSZ9W702');
+        gtag('config', '<?= getenv('GTAG') ?>');
     </script>
+    <?php if (isset($schema)): ?>
+        <script type="application/ld+json">
+    <?= json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+    </script>
+    <?php endif; ?>
 </head>
 
 <body>
@@ -48,10 +58,14 @@ $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         </a>
         <button class="hamburger" id="hamburger">☰</button>
         <nav class="nav-links" id="navLinks">
-            <a href="/about" class="<?= $currentPath === '/about' ? 'active' : '' ?>" aria-label="About Unspecialist">About</a>
-            <a href="/manifesto" class="<?= $currentPath === '/manifesto' ? 'active' : '' ?>" aria-label="Read the Unspecialist Manifesto">Manifesto</a>
-            <a href="https://newsletter.unspecialist.com" target="_blank" aria-label="Read blogs on Unspecialist">Newsletter</a>
-            <a href="https://www.youtube.com/@imunspecialist" target="_blank" aria-label="Youtube channel of Unspecialist">YouTube</a>
+            <a href="/about" class="<?= $currentPath === '/about' ? 'active' : '' ?>"
+                aria-label="About Unspecialist">About</a>
+            <a href="/manifesto" class="<?= $currentPath === '/manifesto' ? 'active' : '' ?>"
+                aria-label="Read the Unspecialist Manifesto">Manifesto</a>
+            <a href="https://newsletter.unspecialist.com" target="_blank"
+                aria-label="Read blogs on Unspecialist">Newsletter</a>
+            <a href="https://www.youtube.com/@imunspecialist" target="_blank"
+                aria-label="Youtube channel of Unspecialist">YouTube</a>
         </nav>
     </header>
     <script>

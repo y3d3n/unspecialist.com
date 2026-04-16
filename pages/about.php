@@ -1,7 +1,72 @@
 <?php
-$title = "About | Unspecialist.com";
-$description = "A Builder exploring art, technology, and long-term thinking. Writing about learning in public, internet leverage, and creative systems.";
+$title = "About Yeden Sherpa — Artist, Developer, 3D Generalist & Unspecialist";
+$description = "Yeden Sherpa is a fine art graduate from Kathmandu who codes, makes art, builds products, and teaches. Meet the person behind Unspecialist — a platform for multi-disciplinary creators.";
 $og_description = "Meeth the Unspecialist - building across disciplines, documenting experiments, and designing long-term creative leverage.";
+$keywords = "Yeden Sherpa, about, unspecialist, multi-disciplinary creator, web developer Nepal, 3D generalist, artist developer, Kathmandu creator";
+$og_image = "https://unspecialist.com/assets/profile-yeden.jpeg";
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "ProfilePage",
+    "name" => "About Yeden Sherpa",
+    "url" => "https://unspecialist.com/about",
+    "description" => "Yeden Sherpa is a multi-disciplinary creator from Kathmandu — web developer, artist, 3D generalist, product builder, and teacher. Founder of Unspecialist.",
+    "mainEntity" => [
+        "@type" => "Person",
+        "name" => "Yeden Sherpa",
+        "url" => "https://unspecialist.com",
+        "image" => "https://unspecialist.com/assets/profile-yeden.jpeg",
+        "jobTitle" => "Creator, Developer, Artist, Teacher",
+        "description" => "Fine art graduate from Kathmandu. I code, make art, design, teach, and experiment — not because I planned it that way, but because I couldn't stop.",
+        "alumniOf" => [
+            "@type" => "EducationalOrganization",
+            "name" => "Kathmandu University, School of Arts, Department of Art & Design"
+        ],
+        "knowsAbout" => [
+            "Web App Development",
+            "3D Design",
+            "Blender",
+            "Fine Art",
+            "Product Building",
+            "Teaching",
+            "Creative Direction",
+            "Interdisciplinary Thinking"
+        ],
+        "hasOccupation" => [
+            [
+                "@type" => "Occupation",
+                "name" => "Web App Developer",
+                "description" => "Started career as PHP developer in 2013, hired for the position of designer."
+            ],
+            [
+                "@type" => "Occupation",
+                "name" => "Artist",
+                "description" => "Expressing thoughts and ideas in various mediums depending upon the complexity of the thought process."
+            ],
+            [
+                "@type" => "Occupation",
+                "name" => "3D Generalist",
+                "description" => "Combining art, storytelling and technical problem-solving in Blender and 3D tools."
+            ],
+            [
+                "@type" => "Occupation",
+                "name" => "Product Builder",
+                "description" => "Turning ideas into products, launching, and learning from what happens next."
+            ],
+            [
+                "@type" => "Occupation",
+                "name" => "Teacher",
+                "description" => "Sharing knowledge across YouTube and other platforms for creators and learners."
+            ]
+        ],
+        "sameAs" => [
+            "https://www.youtube.com/@imunspecialist",
+            "https://www.youtube.com/@Y3DS",
+            "https://x.com/theunspecialist",
+            "https://nativetype.com"
+        ]
+    ]
+];
+
 require_once 'includes/header.php';
 ?>
 <main class="container about">
@@ -22,7 +87,7 @@ I'm Yeden Sherpa.
             </li>
             <li>
                 <strong>Artist:</strong>
-                Art has always been my way of <a target="_blank" href="https://kathmandupost.com/miscellaneous/2018/09/29/passing-on-the-baton#:~:text=The%20other%20theme,value%20at%20all." aria-label="How writer felt void and existential cricis watching Yeden's art work">experssing thoughts and ideas</a>  in various medium depending upon the complexity of the thought process.
+                Art has always been my way of <a target="_blank" href="https://kathmandupost.com/miscellaneous/2018/09/29/passing-on-the-baton#:~:text=The%20other%20theme,value%20at%20all." aria-label="How writer felt void and existential cricis watching Yeden's art work">expressing thoughts and ideas</a>  in various medium depending upon the complexity of the thought process.
             </li>
             <li>
                 <strong>3D Generalist:</strong>

@@ -1,7 +1,178 @@
 <?php
-$title = "About | the Unspecialist.com";
-$description = "A Builder exploring art, technology, and long-term thinking. Writing about learning in public, internet leverage, and creative systems.";
+$title = "Tools & Tech I Actually Use — Yeden Sherpa | Unspecialist";
+$description = "A curated list of gear, tools, and software Yeden Sherpa actually uses — MacBook Air M4, Blender, VS Code, Claude, DaVinci Resolve, Anytype and more. No hype. No FOMO. Just what works.";
+$keywords = "tools I use, tech stack, Yeden Sherpa tools, Blender setup, VS Code, DaVinci Resolve, MacBook Air M4, creator tools, unspecialist tech, best tools for creators";
 $og_description = "Meeth the Unspecialist - building across disciplines, documenting experiments, and designing long-term creative leverage.";
+
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "ItemList",
+    "name" => "Tools & Tech I Actually Use",
+    "description" => "A curated list of gear, software, and tools used by Yeden Sherpa — multi-disciplinary creator, developer, and 3D generalist. No hype cycles. Just honest recommendations.",
+    "url" => "https://unspecialist.com/tech",
+    "author" => [
+        "@type" => "Person",
+        "name" => "Yeden Sherpa",
+        "url" => "https://unspecialist.com"
+    ],
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Unspecialist",
+        "url" => "https://unspecialist.com",
+        "logo" => [
+            "@type" => "ImageObject",
+            "url" => "https://unspecialist.com/assets/compass.png"
+        ]
+    ],
+    "mainEntityOfPage" => [
+        "@type" => "WebPage",
+        "@id" => "https://unspecialist.com/tech"
+    ],
+    "itemListElement" => [
+
+        // ── GEARS ──────────────────────────────────────────────
+
+        [
+            "@type" => "ListItem",
+            "position" => 1,
+            "name" => "MacBook Air M4 - 13\"",
+            "item" => [
+                "@type" => "Product",
+                "name" => "MacBook Air M4 13-inch",
+                "description" => "Fanless, light and fast enough for DaVinci, Figma, and Blender works. Recommended over any pro devices for video editing, photography, and office works.",
+                "brand" => [
+                    "@type" => "Brand",
+                    "name" => "Apple"
+                ],
+                "category" => "Laptop / Hardware"
+            ]
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 2,
+            "name" => "iPhone 15 Pro Max",
+            "item" => [
+                "@type" => "Product",
+                "name" => "iPhone 15 Pro Max",
+                "description" => "Go-to 48MP camera for anything creative captures. Works perfectly with the Apple ecosystem.",
+                "brand" => [
+                    "@type" => "Brand",
+                    "name" => "Apple"
+                ],
+                "category" => "Smartphone / Hardware"
+            ]
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 3,
+            "name" => "AJAZZ AK980",
+            "item" => [
+                "@type" => "Product",
+                "name" => "AJAZZ AK980 Mechanical Keyboard",
+                "description" => "A value-for-money mechanical keyboard with numpad for Blender use. Amazing typing experience with satisfying clicking sounds.",
+                "brand" => [
+                    "@type" => "Brand",
+                    "name" => "AJAZZ"
+                ],
+                "category" => "Keyboard / Hardware"
+            ]
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 4,
+            "name" => "KZ Caster Pro",
+            "item" => [
+                "@type" => "Product",
+                "name" => "KZ Caster Pro IEM",
+                "description" => "Used for podcast, games, and music. Detailed, controlled and satisfying sound quality. Recommended over expensive wireless earbuds and AirPods for mid-range IEM value.",
+                "brand" => [
+                    "@type" => "Brand",
+                    "name" => "KZ"
+                ],
+                "category" => "Audio / Hardware"
+            ]
+        ],
+
+        // ── TOOLS OF CHOICE ────────────────────────────────────
+
+        [
+            "@type" => "ListItem",
+            "position" => 5,
+            "name" => "Blender",
+            "item" => [
+                "@type" => "SoftwareApplication",
+                "name" => "Blender",
+                "url" => "https://www.blender.org",
+                "description" => "Primary 3D tool. Switched at version 2.80 from C4D, Maya, Max, Keyshot, and ZBrush. Never looked back. The best place to start 3D — everything else is extra.",
+                "applicationCategory" => "3D Software / Creative Tool",
+                "offers" => [
+                    "@type" => "Offer",
+                    "price" => "0",
+                    "priceCurrency" => "USD"
+                ]
+            ]
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 6,
+            "name" => "VS Code",
+            "item" => [
+                "@type" => "SoftwareApplication",
+                "name" => "Visual Studio Code",
+                "url" => "https://code.visualstudio.com",
+                "description" => "The default code editor. Tried many others and always comes back. Good enough isn't a compromise.",
+                "applicationCategory" => "Code Editor / Developer Tool",
+                "offers" => [
+                    "@type" => "Offer",
+                    "price" => "0",
+                    "priceCurrency" => "USD"
+                ]
+            ]
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 7,
+            "name" => "Claude",
+            "item" => [
+                "@type" => "SoftwareApplication",
+                "name" => "Claude by Anthropic",
+                "url" => "https://claude.ai",
+                "description" => "Used as a second brain for research, logic, debugging, and writing code.",
+                "applicationCategory" => "AI Assistant / Productivity Tool"
+            ]
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 8,
+            "name" => "Anytype",
+            "item" => [
+                "@type" => "SoftwareApplication",
+                "name" => "Anytype",
+                "url" => "https://anytype.io",
+                "description" => "Projects, logs, content plans and half-finished ideas all live here. Local-first and offline capable alternative to Notion.",
+                "applicationCategory" => "Productivity / Note-taking Tool"
+            ]
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 9,
+            "name" => "DaVinci Resolve",
+            "item" => [
+                "@type" => "SoftwareApplication",
+                "name" => "DaVinci Resolve",
+                "url" => "https://www.blackmagicdesign.com/products/davinciresolve",
+                "description" => "Main video editor for Y3DS and Unspecialist. Recommended over any other editing software — the learning curve is real but you'll feel home in a week or so.",
+                "applicationCategory" => "Video Editing Software",
+                "offers" => [
+                    "@type" => "Offer",
+                    "price" => "0",
+                    "priceCurrency" => "USD"
+                ]
+            ]
+        ]
+    ]
+];
+
 require_once 'includes/header.php';
 ?>
 <main class="container tech">
@@ -14,7 +185,7 @@ require_once 'includes/header.php';
         <h2>Gears</h2>
         <section>
             <div>
-                <img  src="/assets/images/MacBook-Air-m4.webp" alt="Macbook Air M4">
+                <img src="/assets/images/MacBook-Air-m4.webp" alt="Macbook Air M4">
             </div>
             <div>
                 <h3>MacBook Air m4 - 13"</h3>

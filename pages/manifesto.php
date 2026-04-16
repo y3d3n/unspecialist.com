@@ -1,7 +1,71 @@
 <?php
-$title = "Manifesto — The Unspecialist Philosophy & Interdisciplinary Thinking";
-$description = "We were told to specialize. We weren’t built that way. A manifesto for curious minds who explore intersections instead of lanes.";
-$og_description = "A manifesto for generalists in a specialist world. Curiosity over credentials. Exploration over expertise. Long-term thinking over trends.";
+$title = "Unspecialist Manifesto — Not Scattered. Layered.";
+$description = "A manifesto for multi-passionate creators who go deep in more than one field. The world wants you to specialize. We refuse. Read the Unspecialist philosophy by Yeden Sherpa.";
+$og_description = "he world wants you to specialize. Some of us refuse. A manifesto for creators who go deep in more than one field — and find that becomes an advantage.";
+$keywords ="unspecialist manifesto, multipotentialite philosophy, interdisciplinary thinking, multi-passionate, depth vs specialization, non-fungible creator, Yeden Sherpa";
+$og_image = "https://unspecialist.com/assets/og-manifesto.webp";
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "Article",
+    "headline" => "The Unspecialist Manifesto — Not Scattered. Layered.",
+    "description" => "A manifesto for multi-passionate creators who go deep in more than one field. The world wants you to specialize. Some of us refuse. A philosophy for interdisciplinary thinkers by Yeden Sherpa.",
+    "url" => "https://unspecialist.com/manifesto",
+    "inLanguage" => "en-US",
+    "author" => [
+        "@type" => "Person",
+        "name" => "Yeden Sherpa",
+        "url" => "https://unspecialist.com"
+    ],
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Unspecialist",
+        "url" => "https://unspecialist.com",
+        "logo" => [
+            "@type" => "ImageObject",
+            "url" => "https://unspecialist.com/assets/compass.png"
+        ]
+    ],
+    "mainEntityOfPage" => [
+        "@type" => "WebPage",
+        "@id" => "https://unspecialist.com/manifesto"
+    ],
+    "about" => [
+        [
+            "@type" => "Thing",
+            "name" => "Interdisciplinary Thinking",
+            "description" => "The practice of drawing from multiple fields and disciplines to solve problems and create work."
+        ],
+        [
+            "@type" => "Thing",
+            "name" => "Multipotentiality",
+            "description" => "The ability and tendency to pursue deep knowledge and skills across multiple fields."
+        ],
+        [
+            "@type" => "Thing",
+            "name" => "Creative Independence",
+            "description" => "Building a path that defies the pressure to specialize in a single career or identity."
+        ]
+    ],
+    "keywords" => [
+        "unspecialist",
+        "manifesto",
+        "multipotentialite",
+        "interdisciplinary thinking",
+        "multi-passionate creator",
+        "depth over specialization",
+        "non-fungible creator",
+        "Yeden Sherpa"
+    ],
+    "citation" => [
+        "@type" => "Quotation",
+        "text" => "A generalist knows a little about many things. An Unspecialist has gone deep in more than one.",
+        "spokenByCharacter" => [
+            "@type" => "Person",
+            "name" => "Yeden Sherpa"
+        ]
+    ]
+];
+
 require_once 'includes/header.php';
 ?>
 <main>
