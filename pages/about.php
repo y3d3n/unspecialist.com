@@ -1,7 +1,7 @@
 <?php
-$title = "About Yeden Sherpa — Artist, Developer, 3D Generalist & Unspecialist";
+$title = "About Yeden Sherpa — Developer, Artist, and Unspecialist";
 $description = "Yeden Sherpa is a fine art graduate from Kathmandu who codes, makes art, builds products, and teaches. Meet the person behind Unspecialist — a platform for multi-disciplinary creators.";
-$og_description = "Meeth the Unspecialist - building across disciplines, documenting experiments, and designing long-term creative leverage.";
+$og_description = "Meet the Unspecialist - building across disciplines, documenting experiments, and designing long-term creative leverage.";
 $keywords = "Yeden Sherpa, about, unspecialist, multi-disciplinary creator, web developer Nepal, 3D generalist, artist developer, Kathmandu creator";
 $og_image = "https://unspecialist.com/assets/profile-yeden.jpeg";
 $schema = [

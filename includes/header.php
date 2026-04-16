@@ -24,7 +24,7 @@ $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= $title ?? $site ?>">
     <meta name="twitter:description" content="<?= $og_description ?? $brief ?>">
-    <meta name="twitter:image" content="https://unspecialist.com/og-image.jpg">
+    <meta name="twitter:image" content="<?= $og_image ?? 'https://unspecialist.com/assets/og-image.webp' ?>">
 
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />

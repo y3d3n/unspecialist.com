@@ -1,13 +1,13 @@
 <?php
-$title = "Unspecialist Manifesto — Not Scattered. Layered.";
-$description = "A manifesto for multi-passionate creators who go deep in more than one field. The world wants you to specialize. We refuse. Read the Unspecialist philosophy by Yeden Sherpa.";
+$title = "The Unspecialist Manifesto — Depth Doesn't Have to Mean One Thing";
+$description = "A manifesto for multi-disciplinary thinkers who refuse to specialise in just one thing. You become non-fungible — not a role, not a title.";
 $og_description = "he world wants you to specialize. Some of us refuse. A manifesto for creators who go deep in more than one field — and find that becomes an advantage.";
 $keywords ="unspecialist manifesto, multipotentialite philosophy, interdisciplinary thinking, multi-passionate, depth vs specialization, non-fungible creator, Yeden Sherpa";
 $og_image = "https://unspecialist.com/assets/og-manifesto.webp";
 $schema = [
     "@context" => "https://schema.org",
     "@type" => "Article",
-    "headline" => "The Unspecialist Manifesto — Not Scattered. Layered.",
+    "headline" => "The Unspecialist Manifesto — Depth Doesn't Have to Mean One Thing",
     "description" => "A manifesto for multi-passionate creators who go deep in more than one field. The world wants you to specialize. Some of us refuse. A philosophy for interdisciplinary thinkers by Yeden Sherpa.",
     "url" => "https://unspecialist.com/manifesto",
     "inLanguage" => "en-US",

@@ -1,6 +1,6 @@
 <?php
-$title = "Unspecialist — The World Wants You Small. Don't Listen.";
-$description = "Unspecialist is a platform for multi-passionate creators who go deep in more than one field. Essays, tools, and honest work by Yeden Sherpa — artist, developer, 3D generalist, teacher.";
+$title = "Unspecialist — Become the Person No One Can Replace";
+$description = "For multi-disciplinary creators, polymath thinkers, and multipotentialites. Go deep in more than one field — and turn that into an edge no one can copy.";
 
 $og_description = "For builders who refuse to be one thing. Learn in public. Connect disciplines. Build deliberately.";
 
@@ -12,8 +12,9 @@ $projects = json_decode($jsondata, true);
 
 $schema = [
     "@context" => "https://schema.org",
-    "@type" => "Person",
-    "name" => "Yeden Sherpa",
+    "@id"=> "https://unspecialist.com/#website",
+    "@type" => "WebSite",
+    "name" => "Unspecialist",
     "url" => "https://unspecialist.com",
     "sameAs" => [
         "https://www.youtube.com/@imunspecialist",
@@ -22,7 +23,8 @@ $schema = [
         "https://www.linkedin.com/in/yedensherpa"
     ],
     "jobTitle" => "Creator, Developer, Artist",
-    "description" => "ulti-disciplinary creator from Kathmandu. Artist, developer, 3D generalist, teacher, and founder of Unspecialist.",
+    "description" => "A space for multi-disciplinary thinkers and creators who go deep in more than one field.",
+    "publisher"=> [ "@id"=> "https://unspecialist.com/#yeden" ],
     "knowsAbout" => [
         "Web App Development",
         "3D Design",
